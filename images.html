@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>infinity creations, photos, decoration photos, event decoration photos, wedding planning</title>
+</head>
+
+<body class="iview " style="background-color: black">
+    <style>
+        .lg-custom-thumbnails {
+            width: 100%;
+            position: absolute;
+            background-color: black;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: 0 auto;
+            overflow-y: auto;
+            transform: translate3d(10%, 3.8%, 20%);
+            opacity: 0.4;
+            will-change: transform opacity;
+            transition: transform 2.15s cubic-bezier(0, 0, 0.25, 1) 2s, cubic-bezier( 0, 0, 0.25, 1 ) 1.15s;
+        }
+
+        .lg-thumb-open {
+            opacity: 1;
+        }
+
+        .lg-thumb-item {
+            filter: grayscale(100%);
+            will-change: filter;
+            transition: filter 0.12s ease-in, border-color 0.12s ease;
+        }
+
+        :hover, .active {
+            filter: grayscale(0);
+            border-color: #545454;
+        }
+
+        .iview {
+            width: 800px;
+            height: 630px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 3%;
+        }
+
+        .iiview {
+            width: 750px;
+            height: 680px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 3%;
+        }
+
+
+        .lg-thumb {
+        }
+
+        .tit {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+        }
+        .logo {
+            width: 85px;
+            height: 50px;
+            padding: 5%;
+        }
+
+        @media screen and (max-width: 580px) {
+            #customize-thumbnails-gallery {
+                width: 100%;
+            }
+
+            .iview {
+                width: 100%;
+                height: 230px;
+            }
+
+            .iiview {
+                width: 100%;
+                height: 280px;
+            }
+        }
+    </style>
+    <div class="tit">
+        <i>Infinity Creations</i>
+        <a href="index.html">
+            <p>HOME</p>
+        </a>
+    </div>
+    <div id="customize-thumbnails-gallery">
+        <div>
+
+            <a href="index.html">
+                <img class="iiview lg-thumb-open lg-thumb lg-thumb-item" src="images/1c.jpeg" />
+            </a>
+            <a href="index.html">
+                <img class="iview lg-thumb-open lg-thumb-item" src="images/1b.jpeg" />
+            </a>
+        </div>
+        <a href="index.html">
+            <img class=" iiview lg-thumb-open lg-thumb-item" src="images/1a.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-open lg-thumb-item" src="images/1d.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-item lg-thumb-open" src="images/1e.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iiview lg-thumb-open lg-thumb-item" src="images/1f.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-open lg-thumb-item" src="images/1j.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iiview lg-thumb-open lg-thumb-item" src="images/1h.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-open lg-thumb-item" src="images/1i.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class=" iiview lg-thumb-open lg-thumb-item" src="images/1k.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-open lg-thumb-item" src="images/1l.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-item lg-thumb-open" src="images/1m.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iiview lg-thumb-open lg-thumb-item" src="images/1n.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-open lg-thumb-item" src="images/1o.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iiview lg-thumb-open lg-thumb-item" src="images/1p.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-open lg-thumb-item" src="images/1q.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-open lg-thumb-item" src="images/1r.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iiview lg-thumb-open lg-thumb-item" src="images/1s.jpeg" />
+        </a>
+        <a href="index.html">
+            <img class="iview lg-thumb-open lg-thumb-item" src="images/1t.jpeg" />
+        </a>
+
+
+
+    </div>
+    <div style="margin: 0 auto; text-align: center ">
+        <img class="logo" src="giphy.gif" alt="Infinity logo" />
+    </div>
+    <script>
+        lightGallery(document.getElementById('customize-thumbnails-gallery'), {
+            // Add a custom class to apply style only for the particular gallery
+            addClass: 'lg-custom-thumbnails',
+
+            // Remove the starting animations.
+            // This can be done by overriding CSS as well
+            appendThumbnailsTo: '.lg-outer',
+
+            animateThumb: false,
+            allowMediaOverlap: true,
+        });
+    </script>
+</body>
+</html>
